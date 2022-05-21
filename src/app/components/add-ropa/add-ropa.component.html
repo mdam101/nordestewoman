@@ -1,0 +1,32 @@
+<div class="container">
+  <h1 class="titulo">Añadir ropa</h1>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" method="post">
+    <div class="submit-form">
+      <div>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required formControlName="nombre" name="nombre"/>
+        </div>
+        <div class="form-group">
+          <label for="descripcion">Descripción</label>
+          <input type="text" class="form-control" id="descripcion" required formControlName="descripcion" name="descripcion"/>
+        </div>
+        <div class="form-group">
+            <label for="precio">Precio</label>
+            <input type="number" class="form-control" id="precio" required formControlName="precio" name="precio"/>
+        </div>
+        <div class="form-group">
+            <label for="nombreCategoria">Categoría</label>
+            <input type="text" class="form-control" id="nombreCategoria" required formControlName="nombreCategoria" name="nombreCategoria"/>
+        </div>
+        <div class="form-group">
+            <label for="imagen">Imagen</label>
+            <input type="file" class="form-control" id="imagen" required formControlName="imagen" name="imagen" (change)="onImgSelected($event)"/>
+        </div>
+        <button type="submit" [disabled]="!form.valid" class="btn btn-success boton">Confirmar</button>
+        <a href="#" routerLink="/ropa" class="btn btn-primary boton">Cancelar</a>
+      </div>
+    </div>
+  </form>
+</div>
+  

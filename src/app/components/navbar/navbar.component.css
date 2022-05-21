@@ -1,0 +1,22 @@
+.menu {
+    align-items: flex-end;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.enlaces {
+    text-decoration:none;
+    color: white;
+}
+
+.titulo {
+    font-family: Gabriola;
+    font-size: 35px;
+}
+
+@font-face {
+    font-family: Gabriola;
+    src: url(../../../assets/fonts/Gabriola.ttf);
+}

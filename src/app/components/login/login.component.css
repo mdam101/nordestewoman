@@ -1,0 +1,29 @@
+.formulario {
+    border: 1px solid #707070;
+    border-radius: 37px;
+    padding: 20px;
+    margin: 59px;
+}
+
+.campo-formulario {
+    width: 100%;
+}
+
+.titulo {
+    color: #EA8A28;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.boton {
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 20px;
+    width: 20%;
+}
+
+.enlaces {
+    text-decoration:none;
+    color: #EA8A28;
+    margin-top: 10px;
+}

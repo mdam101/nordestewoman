@@ -1,0 +1,21 @@
+<div class="container text-center">
+    <div class="formulario">
+        <form class="text-center" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <h2 class="titulo">Bienvenida</h2>  
+            <mat-form-field appearance="fill" class="campo-formulario">
+                <mat-label for="email">Email</mat-label>
+                <input type="email" matInput formControlName="email" id="email" name="email">
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill" class="campo-formulario">
+                <mat-label for="password">Contraseña</mat-label>
+                <input type="password" matInput formControlName="password" id="password" name="password">
+            </mat-form-field>
+            <br>
+            <br>
+            <button mat-raised-button color="primary" [disabled]="!form.valid" class="boton">Regístrate</button>
+        </form>
+        <br>
+        <p><a class="enlaces" [routerLink]="['/login']">¿Tienes cuenta? Inicia sesión</a></p>
+    </div>
+</div>

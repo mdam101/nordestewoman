@@ -1,0 +1,29 @@
+<div class="footer">
+    <div class="row text-center">
+        <div class="col">
+            <span class="titulo">Nordeste</span>
+            <ul class="lista">
+                <li><a [routerLink]="['/ropa']" class="enlaces">Ropa</a></li>
+                <li><a [routerLink]="['/contacto']" class="enlaces">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <span class="subtitulo">Ropa</span>
+            <ul class="lista" *ngFor="let categoria of categorias">
+                <li><a href="/ropa/categoria/{{categoria.nombre}}" class="enlaces">{{categoria.nombre}}</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <span>Síguenos en nuestras redes sociales</span>
+            <br><br>
+            <a href="https://www.facebook.com/people/NORDESTE/100054284720133/?refid=52"><img src="https://cdn.discordapp.com/attachments/772209374373609523/976913729675468840/facebook.png" height="40" width="40" class="img"></a>
+            <a href="https://www.instagram.com/nordeste11/?hl=es"><img src="https://cdn.discordapp.com/attachments/772209374373609523/976913728631087214/instagram.png" height="40" width="40" class="img"></a> 
+            <br><br>
+            <span>O contáctanos</span>
+            <br><br>
+            <a href="tel:+34941502256"><img src="https://cdn.discordapp.com/attachments/772209374373609523/976913973360336936/telefono.png" height="40" width="40" class="img"></a>
+            <a href="mailto:daw18.2021@gmail.com"><img src="https://cdn.discordapp.com/attachments/772209374373609523/976913729293807626/correo.png" height="30" width="40" class="img"></a>
+            <a href="https://web.whatsapp.com/"><img src="https://cdn.discordapp.com/attachments/772209374373609523/976913974140469338/whatsapp.png" height="40" width="40" class="img"></a>
+        </div>
+    </div>
+</div>

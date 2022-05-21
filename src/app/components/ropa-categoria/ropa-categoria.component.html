@@ -1,0 +1,26 @@
+<div class="container">
+  <h1 class="titulo">Ropa</h1>
+  <div class="row">
+  <div class="card ropa" *ngFor="let ropa of ropas">
+     <a routerLink="/ropa/{{ropa.id}}/view" class="enlaces">
+       <img class="card-img-top" src="https://nordestewoman.herokuapp.com/ropas/imagen/{{ropa.id}}" alt="Card image cap">
+       <div class="card-body">
+         <h2 class="card-title">{{ropa.nombre}}</h2>
+         <h1 class="card-text text-end">{{ropa.precio}} €</h1>
+       </div>
+     </a>
+       <div class="text-center">
+           <a routerLink="/ropa/{{ropa.id}}/edit">
+             <button mat-raised-button class="margen" color="primary">
+               <mat-icon>edit</mat-icon>
+             </button>
+           </a>
+           <a (click)="deleteRopa(ropa.id)">
+           <button mat-raised-button class="margen" color="primary">
+             <mat-icon>delete</mat-icon>
+           </button>
+           </a>
+       </div>
+   </div>
+  </div>
+</div>

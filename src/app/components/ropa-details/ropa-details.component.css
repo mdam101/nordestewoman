@@ -1,0 +1,30 @@
+.boton {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 40%;
+    margin-right: 10px;
+}
+
+.boton2 {
+    background-color: #EA8A28;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 20%;
+}
+
+.margen {
+    margin: 20px;
+}
+
+.titulo {
+    color: #EA8A28;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.precio {
+    text-align: right;
+    font-size: 30px;
+}

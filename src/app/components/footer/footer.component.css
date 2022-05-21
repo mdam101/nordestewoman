@@ -1,0 +1,32 @@
+.titulo {
+    font-family: Gabriola;
+    font-size: 35px;
+}
+
+@font-face {
+    font-family: Gabriola;
+    src: url(../../../assets/fonts/Gabriola.ttf);
+}
+
+.footer {
+    color: white;
+    background-color: #1A1B1C;
+    padding: 50px;
+}
+
+.lista {
+   list-style: none; 
+}
+
+.subtitulo {
+    font-size: 20px;
+}
+
+.enlaces {
+    text-decoration:none;
+    color: white;
+}
+
+.img {
+    margin-right: 20px;
+}

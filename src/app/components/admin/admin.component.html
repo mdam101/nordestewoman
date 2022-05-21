@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="titulo">¡Bienvenida a la zona de administrador!</h1>
+    <h2>Categorías:</h2>
+    <ul *ngFor="let categoria of categorias" class="list-group text-center" style="width: 18rem;">
+        <li class="list-group-item">{{categoria.nombre}}
+            <a (click)="deleteCategoria(categoria.id)">
+                <button mat-raised-button color="primary">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </a>
+        </li>
+    </ul>
+    <a routerLink="/categoria/add-categoria"><button mat-raised-button color="primary" class="boton">Añadir categoría</button></a>
+    <h2>Usuarios:</h2>
+    <ul *ngFor="let usuario of usuarios" class="list-group text-center" style="width: 18rem;">
+        <li class="list-group-item">{{usuario.email}} | {{usuario.rol}}</li>
+    </ul>
+    <!--<a routerLink="/register-role"><button mat-raised-button color="primary" class="boton2">Registrar usuario admin</button></a>-->
+    <div class="text-end">
+        <a (click)="logout()"><button mat-raised-button color="primary" class="logout">Cerrar sesión</button></a>
+    </div>
+</div>

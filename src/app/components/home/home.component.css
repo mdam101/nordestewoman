@@ -1,0 +1,18 @@
+.inicio {
+    background-color: #D8DFE5;
+    border: none;
+}
+
+.enlaces {
+    text-decoration:none;
+    color: #EA8A28;
+    font-size: 40px;
+}
+
+.background1 {
+    background-image: url("../../../assets/img/ropa1.jpeg");
+}
+
+.background2 {
+    background-image: url("../../../assets/img/contacto1.jpeg");
+}

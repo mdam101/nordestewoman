@@ -1,0 +1,29 @@
+<div class="inicio">
+<div class="container text-center">
+<div id="carouselExampleControls" class="carousel mat-slide-toggle-thumb" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://cdn.discordapp.com/attachments/772209374373609523/976911543042191390/pantalon-vaquero.jpg" alt="Pantalones vaqueros">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.discordapp.com/attachments/772209374373609523/976911542803107880/chaqueta-beige.jpg" alt="Chaqueta vaquera beige">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.discordapp.com/attachments/772209374373609523/976911543260283040/camiseta-azul.jpg" alt="Camiseta azul marino con cuello en pico">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <a [routerLink]="['/ropa']" class="enlaces"><mat-grid-tile class="background1">Ropa</mat-grid-tile></a>
+    <a [routerLink]="['/contacto']" class="enlaces"><mat-grid-tile class="background2">Contacto</mat-grid-tile></a>
+  </mat-grid-list>
+</div>
+</div>

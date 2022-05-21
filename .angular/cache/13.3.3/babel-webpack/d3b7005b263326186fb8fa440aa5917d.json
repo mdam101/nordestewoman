@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var UserRole = /*#__PURE__*/(() => {\n  (function (UserRole) {\n    UserRole[\"ADMIN\"] = \"ADMIN\";\n    UserRole[\"USER\"] = \"USER\";\n  })(UserRole || (UserRole = {}));\n\n  return UserRole;\n})();","map":null,"metadata":{},"sourceType":"module"}

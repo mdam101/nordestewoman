@@ -1,0 +1,15 @@
+<div class="container" *ngIf="ropa">
+    <div class="row align-items-center margen">
+        <div class="col">
+        <img src="https://nordestewoman.herokuapp.com/ropas/imagen/{{ropa?.id}}" width="500px">
+        </div>
+        <div class="col ">
+            <h1 class="titulo">{{ropa?.nombre}}</h1>
+            <h2>Talla: S M L XL</h2>
+            <h1 class="precio">{{ropa?.precio}}€</h1>
+            <p>Descripción: {{ropa?.descripcion}}</p>
+            <a routerLink=""><button mat-raised-button color="primary" class="boton">Añadir al carrito</button></a>
+            <a routerLink="/ropa"><button mat-raised-button color="primary" class="boton2">Atrás</button></a>
+        </div>
+    </div>
+</div>

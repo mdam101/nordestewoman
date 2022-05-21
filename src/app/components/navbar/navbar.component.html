@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+    <a class="nav-link enlaces" [routerLink]="['/']"><img src="https://cdn.discordapp.com/attachments/772209374373609523/976913729088290836/logo.png" height="40" width="40"></a>
+    <span class="titulo"><a class="nav-link enlaces" [routerLink]="['/']">Nordeste</a></span>
+    <span class="example-spacer"></span>
+    <div class="menu">
+        <button mat-button>
+            <a class="nav-link enlaces" [routerLink]="['/ropa']"><span>Ropa</span></a>
+        </button>
+        <button mat-button>
+        <span><a class="nav-link enlaces" [routerLink]="['/contacto']">Contacto</a></span> 
+        </button>
+        <button mat-button>
+            <mat-icon>search</mat-icon>
+        </button>
+        <button mat-button>
+            <mat-icon>shopping_cart</mat-icon>
+        </button>
+        <button mat-button>
+            <a class="nav-link enlaces" routerLinkActive="active" [routerLink]="['/login']"><mat-icon>person</mat-icon></a>
+        </button>
+    </div>
+</mat-toolbar>
