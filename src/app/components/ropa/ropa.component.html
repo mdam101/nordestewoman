@@ -2,6 +2,7 @@
   <div class="container">
     <h1 class="titulo">Ropa</h1>
     <a routerLink="/ropa/add-ropa" *ngIf="botonVisible"><button mat-raised-button color="primary" class="boton">Añadir ropa</button></a>
+    <a routerLink="/admin" *ngIf="botonVisible"><button mat-raised-button color="primary" class="boton">Ir a admin</button></a>
     <div class="row">
       <div class="card ropa" *ngFor="let ropa of ropas">
        <a routerLink="/ropa/{{ropa.id}}/view" class="enlaces">
