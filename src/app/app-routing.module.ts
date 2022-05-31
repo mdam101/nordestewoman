@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'ropa/add-ropa', component: AddRopaComponent, canActivate: [AuthGuard] },
   { path: 'ropa/:id/view', component: RopaDetailsComponent },
   { path: 'ropa/:id/edit', component: EditRopaComponent, canActivate: [AuthGuard] },
-  { path: 'ropa/categoria/:nombreCategoria', component: RopaCategoriaComponent },
+  { path: 'ropas/categoria/:nombreCategoria', component: RopaCategoriaComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
   { path: 'categoria/add-categoria', component: AddCategoriaComponent, canActivate: [AuthGuard] },
